@@ -1,0 +1,155 @@
+/* Reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+
+.section{
+    padding-bottom: 64px;
+  }
+  
+  @media screen and (min-width:768px) {
+    .section{
+      padding-bottom: 80px;}
+    }
+    @media screen and (min-width:1140px) {
+      .section{
+        padding-bottom: 100px;}
+      }
+:root {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1,29;
+  font-weight: 400;
+
+  --primary-text-color: #121212;
+  --secondary-text-color: #F6F6F6;
+  --primary-background-color:#D8D8D8;
+  --secondary-background-color: #121212;
+  --white-base: #FFFFFF;
+}
+
+.container {
+  max-width: 735px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+
+/*---------------------------------- 
+-------------my styles-------------
+------------------------------------ */
+
+.container-main-page-welcome {padding-bottom: 64px;}
+
+.title-main-page-welcome {
+    max-width: 335px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+.title-main-page-welcome-ital {
+    font-style: italic;
+}
+.title-main-page-welcome {margin-bottom: 32px;}
+
+.text-main-page-welcome.hotel {width: 306px;
+}
+.text-main-page-welcome.room {width: 335px;
+}
+.text-main-page-welcome {color: #000000;}
+
+.descr-main-page-welcome {margin-bottom: 32px;}
+
+.list-main-page-welcome {display: flex;
+flex-direction: column;
+gap: 32px;}
+
+ @media screen and (min-width:768px) {
+.container-main-page-welcome {padding-bottom: 80px;}
+.list-main-page-welcome {display: flex;
+flex-direction: row;
+}
+.text-main-page-welcome.room {width: 367px;}
+
+ .title-main-page-welcome {
+    max-width: 434px;
+    font-size: 36px;
+    line-height: 1.11;
+    color: #000000;
+}
+.title-main-page-welcome {margin-bottom: 50px;}
+.descr-main-page-welcome {margin-bottom: 40px;}
+
+}
+
+@media screen and (min-width:1440px) {
+      
+    .container-main-page-welcome {display: flex;
+    flex-direction: row-reverse;
+justify-content: flex-end;
+gap: 32px;}
+.text-main-page-welcome.hotel {width: 437px;
+}
+.text-main-page-welcome.room {width: 437px;
+}
+.list-main-page-welcome {flex-direction: column};
+}
+
+
